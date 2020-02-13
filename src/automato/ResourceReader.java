@@ -1,5 +1,9 @@
 package automato;
 
+import automato.rules.Parameter;
+import automato.rules.Rules;
+import automato.rules.RulesListImpl;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -16,7 +20,7 @@ import static java.lang.String.format;
  */
 public class ResourceReader {
 
-    public AutomatoRules readAutomataRules(String path, boolean verbose) {
+    public Rules readAutomataRules(String path, boolean verbose) {
         Config config = null;
         List<Parameter> function = null;
 
@@ -58,7 +62,7 @@ public class ResourceReader {
             e.printStackTrace();
         }
 
-        return new AutomatoRules(function, config);
+        return new RulesListImpl(function, config);
     }
 
     private List<Parameter> instantiateTransitionFunction(List<String[]> function) {
@@ -69,7 +73,6 @@ public class ResourceReader {
                                               command[1],   // string de entrada
                                               command[2])   // proximo estado
             );
-
         }
         return transitionRules;
     }

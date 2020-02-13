@@ -1,5 +1,8 @@
 package automato;
 
+import automato.rules.Parameter;
+import automato.rules.Rules;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -9,10 +12,10 @@ import java.util.List;
  */
 public class Automato {
 
-    private final AutomatoRules rules;
+    private final Rules rules;
     private final boolean verbose;
 
-    public Automato(AutomatoRules rules, boolean verbose) {
+    public Automato(Rules rules, boolean verbose) {
         this.rules = rules;
         this.verbose = verbose;
     }
@@ -29,26 +32,13 @@ public class Automato {
             if(!isCharAnalyzable(analyzedArray[counter])){
                 throw new IllegalArgumentException("Não é possivel analisar: " + analyzedArray[counter]);
             }
-            currentState = transitionFunction(currentState, analyzedArray[counter]);
+            currentState = rules.nextState(currentState, analyzedArray[counter]);
             counter++;
         }
         return finalState.contains(currentState);
     }
-
     private boolean isCharAnalyzable(String str) {
         return rules.getConfig().getAlphabet().contains(str);
-    }
-
-    private String transitionFunction(String currentState, String currentData) {
-        for(Parameter param : rules.getParameter()) {
-            if(param.getRequiredState().equals(currentState) && currentData.equals(param.getRequiredValue())) {
-                if( verbose ) {
-                    System.out.printf("%3.1s | %3.1s -> %3.1s%n", currentData, currentState, param.getNextState());
-                }
-                return param.getNextState();
-            }
-        }
-        throw new IllegalStateException("O estado ou o dado atual não estão sendo reconhecidos");
     }
 
     private String[] parseExpression(String expression) {
@@ -56,7 +46,6 @@ public class Automato {
         return Arrays.stream(temp)
                 .map(String::trim)
                 .toArray(String[]::new);
-
     }
 
 }

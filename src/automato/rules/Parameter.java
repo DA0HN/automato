@@ -1,4 +1,4 @@
-package automato;
+package automato.rules;
 
 /*
  * @project automato_finito_deterministico
