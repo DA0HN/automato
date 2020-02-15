@@ -18,7 +18,9 @@ public class ExtractMapImpl extends ExtractService{
         Map<Map<String,String>, String> transitionRules = new HashMap<>();
 
         for(String[] command : function) {
-            transitionRules.put(valueAndNextStatePair(command[0], command[1]), command[2]);
+            transitionRules.put(valueAndNextStatePair(command[0],   // currentState
+                                                      command[1]),  // currentValue
+                                command[2]);                        // nextState
         }
         return transitionRules;
     }
@@ -29,7 +31,11 @@ public class ExtractMapImpl extends ExtractService{
          return pair;
     }
 
+
     @Override public Rules createExtractedRules(List<String> config, List<String[]> param) {
+
+        setConfig(config);
+        setParam(param);
 
         var configInstance = instantiateConfig(config);
         var paramInstance = instantiateTransitionFunction(param);
