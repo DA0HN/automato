@@ -14,7 +14,9 @@ import java.util.List;
 public class ExtractListImpl extends ExtractService {
 
     @Override public Rules createExtractedRules(List<String> config, List<String[]> param) {
-        
+        setConfig(config);
+        setParam(param);
+
         var configInstance = instantiateConfig(config);
         var paramInstance = instantiateTransitionFunction(param);
         
@@ -32,6 +34,5 @@ public class ExtractListImpl extends ExtractService {
         }
         return transitionRules;
     }
-
 
 }
