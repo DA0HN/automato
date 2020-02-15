@@ -10,16 +10,18 @@ import java.util.List;
  */
 public class Config {
 
-    private List<String> finiteState = new ArrayList<>();
-    private List<String> alphabet = new ArrayList<>();
-    private String initialState;
-    private List<String> finalState = new ArrayList<>();
+    private final List<String> finiteState = new ArrayList<>();
+    private final List<String> alphabet = new ArrayList<>();
+    private final String initialState;
+    private final List<String> finalState = new ArrayList<>();
 
 
     public Config(String finiteState, String alphabet, String initialState, String finalState) {
+
+        this.initialState = initialState;
+
         setFiniteState(finiteState);
         setAlphabet(alphabet);
-        setInitialState(initialState);
         setFinalState(finalState);
     }
 
@@ -41,10 +43,6 @@ public class Config {
 
     public String getInitialState() {
         return initialState;
-    }
-
-    private void setInitialState(String initialState) {
-        this.initialState = initialState;
     }
 
     public List<String> getFinalState() {
