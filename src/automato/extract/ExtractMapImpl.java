@@ -3,6 +3,7 @@ package automato.extract;
 import automato.rules.Rules;
 import automato.rules.RulesMapImpl;
 
+import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.List;
 import java.util.Map;
@@ -13,15 +14,19 @@ import java.util.Map;
  */
 public class ExtractMapImpl extends ExtractService{
 
-    private Map<String, Map<String,String>> instantiateTransitionFunction(List<String[]> function) {
-        Map<String, Map<String,String>> transitionRules = new Hashtable<>();
+    private Map<Map<String,String>, String> instantiateTransitionFunction(List<String[]> function) {
+        Map<Map<String,String>, String> transitionRules = new HashMap<>();
 
         for(String[] command : function) {
-            var foo = new Hashtable<String, String>();
-            foo.put(command[1], command[2]);
-            transitionRules.put(command[0], foo);
+            transitionRules.put(valueAndNextStatePair(command[0], command[1]), command[2]);
         }
         return transitionRules;
+    }
+
+    private Map<String,String> valueAndNextStatePair(String value, String nextState){
+         Map<String, String> pair = new HashMap<>();
+         pair.put(value, nextState);
+         return pair;
     }
 
     @Override public Rules createExtractedRules(List<String> config, List<String[]> param) {

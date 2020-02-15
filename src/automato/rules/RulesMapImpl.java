@@ -10,19 +10,22 @@ import java.util.Map;
  */
 public class RulesMapImpl implements Rules{
 
-    private Map<String, Map<String,String>> parameter;
+    private Map<Map<String,String>, String> parameter;
     private Config config;
 
-    public RulesMapImpl(Config config, Map<String,Map<String,String>> parameter){
+    public RulesMapImpl(Config config, Map<Map<String,String>,String> parameter){
         this.parameter = parameter;
         this.config = config;
     }
 
     @Override
     public String nextState(String currentState, String currentValue) {
-        return this.parameter
-                .get(currentState)  // busca um Map<valorDesejado, proximoEstado>
-                .get(currentValue); // insere o valor desejado para recuperar o proximo estado
+        for(Map<String,String> map : parameter.keySet()) {
+            if(map.containsKey(currentState) && map.containsValue(currentValue)) {
+                return parameter.get(map);
+            }
+        }
+        throw new IllegalStateException("O estado ou o dado atual não estão sendo reconhecidos");
     }
 
     @Override
