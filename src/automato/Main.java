@@ -1,5 +1,8 @@
 package automato;
 
+import automato.extract.ExtractListImpl;
+import automato.extract.ExtractMapImpl;
+import automato.extract.ExtractService;
 import automato.rules.Rules;
 
 public class Main {
@@ -11,7 +14,7 @@ public class Main {
         String str2 = "1, 1, 1, 1, 1, 1";
         String str3 = "2, 1, 1, 1, 1";
 
-        Rules rules = new ResourceReader().readAutomataRules("src/resources/input.txt", false);
+        Rules rules = new ResourceReader(new ExtractListImpl()).readAutomataRules("src/resources/input.txt", false);
 
         Automato auto = new Automato(rules, true);
         boolean isAccepted = auto.evaluateExpression(str);

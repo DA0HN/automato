@@ -27,7 +27,7 @@ public class AutomatoRules {
 
     @Override
     public String toString() {
-        return "AutomatoRules{" +
+        return "Rules{" +
                 "parameter=" + parameter +
                 ", config=" + config +
                 '}';

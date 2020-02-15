@@ -1,5 +1,6 @@
 package automato;
 
+import automato.extract.ExtractService;
 import automato.rules.Parameter;
 import automato.rules.Rules;
 import automato.rules.RulesListImpl;
@@ -8,11 +9,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
-import static java.lang.String.format;
+import java.util.*;
 
 /*
  * @project automato_finito_deterministico
@@ -20,15 +17,18 @@ import static java.lang.String.format;
  */
 public class ResourceReader {
 
+    private ExtractService service;
+
+    public ResourceReader(ExtractService service) {
+        this.service = service;
+    }
+
     public Rules readAutomataRules(String path, boolean verbose) {
-        Config config = null;
-        List<Parameter> function = null;
+        List<String> configData = new ArrayList<>();
+        List<String[]> functionData = new ArrayList<>();
 
         try ( BufferedReader buffer = Files.newBufferedReader(Path.of(path)) ) {
             int pointer = 0;
-
-            List<String> configData = new ArrayList<>();
-            List<String[]> functionData = new ArrayList<>();
 
             while(buffer.ready()) {
                 String line = buffer.readLine();
@@ -41,48 +41,13 @@ public class ResourceReader {
                                      .toArray(String[]::new)
                     );
                 }
-
                 pointer++;
-            }
-
-            config = instantiateConfig(configData.get(0),       // estados
-                                           configData.get(1),   // alfabeto
-                                           configData.get(2),   // estado inicial
-                                           configData.get(3));  // estado final
-
-            function = instantiateTransitionFunction(functionData);
-
-            if( verbose ){
-                System.out.println(config);
-                System.out.println("---------------");
-                function.forEach(System.out::println);
             }
         }
         catch(IOException e) {
             e.printStackTrace();
         }
 
-        return new RulesListImpl(function, config);
+        return service.createExtractedRules(configData, functionData);
     }
-
-    private List<Parameter> instantiateTransitionFunction(List<String[]> function) {
-        List<Parameter> transitionRules = new ArrayList<>();
-
-        for(String[] command : function) {
-            transitionRules.add(new Parameter(command[0],   // estado atual
-                                              command[1],   // string de entrada
-                                              command[2])   // proximo estado
-            );
-        }
-        return transitionRules;
-    }
-
-    private Config instantiateConfig(String states, String alphabet, String initialState, String finalState) {
-        return new Config(states,
-                           alphabet,
-                           initialState,
-                           finalState);
-    }
-
-
 }

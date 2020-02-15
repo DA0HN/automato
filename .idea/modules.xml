@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/automato_finito_deterministico.iml" filepath="$PROJECT_DIR$/automato_finito_deterministico.iml" />
+      <module fileurl="file://$PROJECT_DIR$/afd.iml" filepath="$PROJECT_DIR$/afd.iml" />
     </modules>
   </component>
 </project>
