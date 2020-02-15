@@ -11,6 +11,25 @@ import java.util.List;
  */
 public abstract class ExtractService {
 
+    protected List<String[]> param;
+    protected List<String> config;
+
+    protected void setParam(List<String[]> param) {
+        this.param = param;
+    }
+
+    protected void setConfig(List<String> config) {
+        this.config = config;
+    }
+
+    public List<String[]> getParam() {
+        return param;
+    }
+
+    public List<String> getConfig() {
+        return config;
+    }
+
     public abstract Rules createExtractedRules(List<String> config, List<String[]> param);
 
     protected Config instantiateConfig(List<String> config) {
