@@ -6,9 +6,9 @@ package automato.rules;
  */
 public class Parameter {
 
-    private String requiredState;
-    private String requiredValue;
-    private String nextState;
+    private final String requiredState;
+    private final String requiredValue;
+    private final String nextState;
 
     public Parameter(String requiredState, String requiredValue, String nextState) {
         this.requiredState = requiredState;
@@ -20,24 +20,12 @@ public class Parameter {
         return requiredState;
     }
 
-    public void setRequiredState(String requiredState) {
-        this.requiredState = requiredState;
-    }
-
     public String getRequiredValue() {
         return requiredValue;
     }
 
-    public void setRequiredValue(String requiredValue) {
-        this.requiredValue = requiredValue;
-    }
-
     public String getNextState() {
         return nextState;
-    }
-
-    public void setNextState(String nextState) {
-        this.nextState = nextState;
     }
 
     @Override

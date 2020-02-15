@@ -2,13 +2,8 @@ package automato.rules;
 
 import automato.Config;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
-import java.util.function.Supplier;
-import java.util.stream.Collector;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 /*
  * @project automato_finito_deterministico

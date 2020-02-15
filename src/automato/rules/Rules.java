@@ -10,6 +10,6 @@ import java.util.List;
  */
 public interface Rules {
 
-    public String nextState(String currentState, String currentValue);
-    public Config getConfig();
+    String nextState(String currentState, String currentValue);
+    Config getConfig();
 }
