@@ -3,15 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="92da44d2-4d1b-45a6-8dd9-82413c588aef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/automato/Data.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/automato/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/automato/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/automato/extract/ExtractMapImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/automato/extract/ExtractMapImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/automato/rules/RulesMapImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/automato/rules/RulesMapImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mapAutomato/Automato.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mapAutomato/AutomatoRules.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mapAutomato/Config.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mapAutomato/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mapAutomato/Parameter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mapAutomato/ResourceReader.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +127,7 @@
       <workItem from="1581636492538" duration="182000" />
       <workItem from="1581639539778" duration="440000" />
       <workItem from="1581775098257" duration="2393000" />
-      <workItem from="1581786041967" duration="2778000" />
+      <workItem from="1581786041967" duration="10926000" />
     </task>
     <servers />
   </component>
@@ -142,26 +135,34 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="306" y="43" key="#Project_Structure" timestamp="1581788838248">
+      <screen x="62" y="0" width="1304" height="768" />
+    </state>
+    <state x="306" y="43" key="#Project_Structure/62.0.1304.768@62.0.1304.768" timestamp="1581788838248" />
+    <state x="519" y="94" key="#com.intellij.ide.util.MemberChooser" timestamp="1581796345228">
+      <screen x="62" y="0" width="1304" height="768" />
+    </state>
+    <state x="519" y="94" key="#com.intellij.ide.util.MemberChooser/62.0.1304.768@62.0.1304.768" timestamp="1581796345228" />
     <state x="510" y="270" width="408" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1581787801222">
       <screen x="62" y="0" width="1304" height="768" />
     </state>
     <state x="510" y="270" width="408" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/62.0.1304.768@62.0.1304.768" timestamp="1581787801222" />
-    <state width="1261" height="199" key="GridCell.Tab.0.bottom" timestamp="1581788163655">
+    <state width="1261" height="199" key="GridCell.Tab.0.bottom" timestamp="1581797368981">
       <screen x="62" y="0" width="1304" height="768" />
     </state>
-    <state width="1261" height="199" key="GridCell.Tab.0.bottom/62.0.1304.768@62.0.1304.768" timestamp="1581788163655" />
-    <state width="1261" height="199" key="GridCell.Tab.0.center" timestamp="1581788163655">
+    <state width="1261" height="199" key="GridCell.Tab.0.bottom/62.0.1304.768@62.0.1304.768" timestamp="1581797368981" />
+    <state width="1261" height="199" key="GridCell.Tab.0.center" timestamp="1581797368980">
       <screen x="62" y="0" width="1304" height="768" />
     </state>
-    <state width="1261" height="199" key="GridCell.Tab.0.center/62.0.1304.768@62.0.1304.768" timestamp="1581788163655" />
-    <state width="1261" height="199" key="GridCell.Tab.0.left" timestamp="1581788163655">
+    <state width="1261" height="199" key="GridCell.Tab.0.center/62.0.1304.768@62.0.1304.768" timestamp="1581797368980" />
+    <state width="1261" height="199" key="GridCell.Tab.0.left" timestamp="1581797368980">
       <screen x="62" y="0" width="1304" height="768" />
     </state>
-    <state width="1261" height="199" key="GridCell.Tab.0.left/62.0.1304.768@62.0.1304.768" timestamp="1581788163655" />
-    <state width="1261" height="199" key="GridCell.Tab.0.right" timestamp="1581788163655">
+    <state width="1261" height="199" key="GridCell.Tab.0.left/62.0.1304.768@62.0.1304.768" timestamp="1581797368980" />
+    <state width="1261" height="199" key="GridCell.Tab.0.right" timestamp="1581797368981">
       <screen x="62" y="0" width="1304" height="768" />
     </state>
-    <state width="1261" height="199" key="GridCell.Tab.0.right/62.0.1304.768@62.0.1304.768" timestamp="1581788163655" />
+    <state width="1261" height="199" key="GridCell.Tab.0.right/62.0.1304.768@62.0.1304.768" timestamp="1581797368981" />
     <state width="1261" height="238" key="GridCell.Tab.1.bottom" timestamp="1581788139190">
       <screen x="62" y="0" width="1304" height="768" />
     </state>
@@ -186,89 +187,5 @@
       <screen x="62" y="0" width="1304" height="768" />
     </state>
     <state x="410" y="209" key="com.intellij.ide.util.TipDialog/62.0.1304.768@62.0.1304.768" timestamp="1581786049812" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/automato/ResourceReader.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>afd</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.34165996" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
