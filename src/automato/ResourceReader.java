@@ -23,7 +23,7 @@ public class ResourceReader {
         this.service = service;
     }
 
-    public Rules readAutomataRules(String path, boolean verbose) {
+    public Rules readAutomatoRules(String path, boolean verbose) {
         List<String> configData = new ArrayList<>();
         List<String[]> functionData = new ArrayList<>();
 

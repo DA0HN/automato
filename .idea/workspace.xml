@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92da44d2-4d1b-45a6-8dd9-82413c588aef" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/automato/rules/Parameter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/automato/rules/Parameter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/automato/rules/RulesMapImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/automato/rules/RulesMapImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/automato/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/automato/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/automato/ResourceReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/automato/ResourceReader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +126,7 @@
       <workItem from="1581636492538" duration="182000" />
       <workItem from="1581639539778" duration="440000" />
       <workItem from="1581775098257" duration="2393000" />
-      <workItem from="1581786041967" duration="11223000" />
+      <workItem from="1581786041967" duration="11545000" />
     </task>
     <servers />
   </component>

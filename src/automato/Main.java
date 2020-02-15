@@ -22,7 +22,7 @@ public class Main {
         ExtractService service = new ExtractMapImpl();
 
         Rules rules = new ResourceReader(service)
-                .readAutomataRules("src/resources/input.txt", false);
+                .readAutomatoRules("src/resources/input.txt", false);
 
         var automato = new Automato(rules, true);
 
