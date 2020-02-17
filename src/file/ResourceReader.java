@@ -1,9 +1,7 @@
-package automato.file;
+package file;
 
 import automato.extract.ExtractService;
-import automato.rules.Parameter;
 import automato.rules.Rules;
-import automato.rules.RulesListImpl;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,6 +1,5 @@
 package automato;
 
-import automato.rules.Parameter;
 import automato.rules.Rules;
 
 import java.util.Arrays;

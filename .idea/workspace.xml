@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="92da44d2-4d1b-45a6-8dd9-82413c588aef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/afd/META-INF/afd.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/automato/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/automato/ResourceReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/automato/file/ResourceReader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,17 +51,33 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="automato.app" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\JavaWorkspace\automato_finito_deterministico\src\mapAutomato" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Main (2)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="mapAutomato.Main" />
       <module name="afd" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="mapAutomato.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="app.Main" />
+      <module name="afd" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,6 +109,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.Main (1)" />
@@ -127,7 +147,7 @@
       <workItem from="1581639539778" duration="440000" />
       <workItem from="1581775098257" duration="2393000" />
       <workItem from="1581786041967" duration="11545000" />
-      <workItem from="1581941843375" duration="268000" />
+      <workItem from="1581941843375" duration="560000" />
     </task>
     <servers />
   </component>

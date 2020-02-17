@@ -1,7 +1,7 @@
-package automato.app;
+package app;
 
 import automato.Automato;
-import automato.file.ResourceReader;
+import file.ResourceReader;
 import automato.extract.ExtractMapImpl;
 import automato.extract.ExtractService;
 import automato.rules.Rules;
