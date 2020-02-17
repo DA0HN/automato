@@ -1,4 +1,4 @@
-package automato;
+package automato.file;
 
 import automato.extract.ExtractService;
 import automato.rules.Parameter;

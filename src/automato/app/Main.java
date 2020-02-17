@@ -1,14 +1,10 @@
-package automato;
+package automato.app;
 
-import automato.extract.ExtractListImpl;
+import automato.Automato;
+import automato.file.ResourceReader;
 import automato.extract.ExtractMapImpl;
 import automato.extract.ExtractService;
 import automato.rules.Rules;
-import automato.rules.RulesListImpl;
-import org.w3c.dom.ls.LSOutput;
-
-import java.util.Arrays;
-import java.util.List;
 
 public class Main {
 

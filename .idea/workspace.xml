@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92da44d2-4d1b-45a6-8dd9-82413c588aef" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/automato/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/automato/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/automato/ResourceReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/automato/ResourceReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +30,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -127,6 +127,7 @@
       <workItem from="1581639539778" duration="440000" />
       <workItem from="1581775098257" duration="2393000" />
       <workItem from="1581786041967" duration="11545000" />
+      <workItem from="1581941843375" duration="268000" />
     </task>
     <servers />
   </component>
@@ -146,22 +147,30 @@
       <screen x="62" y="0" width="1304" height="768" />
     </state>
     <state x="510" y="270" width="408" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/62.0.1304.768@62.0.1304.768" timestamp="1581787801222" />
-    <state width="1261" height="199" key="GridCell.Tab.0.bottom" timestamp="1581797511079">
-      <screen x="62" y="0" width="1304" height="768" />
+    <state x="274" y="0" key="CommitChangelistDialog2" timestamp="1581941890679">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="274" y="0" key="CommitChangelistDialog2/62.0.1474.864@62.0.1474.864" timestamp="1581941890679" />
+    <state width="1425" height="211" key="GridCell.Tab.0.bottom" timestamp="1581941921894">
+      <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state width="1261" height="199" key="GridCell.Tab.0.bottom/62.0.1304.768@62.0.1304.768" timestamp="1581797511079" />
-    <state width="1261" height="199" key="GridCell.Tab.0.center" timestamp="1581797511078">
-      <screen x="62" y="0" width="1304" height="768" />
+    <state width="1425" height="211" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1581941921894" />
+    <state width="1425" height="211" key="GridCell.Tab.0.center" timestamp="1581941921894">
+      <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state width="1261" height="199" key="GridCell.Tab.0.center/62.0.1304.768@62.0.1304.768" timestamp="1581797511078" />
-    <state width="1261" height="199" key="GridCell.Tab.0.left" timestamp="1581797511078">
-      <screen x="62" y="0" width="1304" height="768" />
+    <state width="1425" height="211" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1581941921894" />
+    <state width="1425" height="211" key="GridCell.Tab.0.left" timestamp="1581941921894">
+      <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state width="1261" height="199" key="GridCell.Tab.0.left/62.0.1304.768@62.0.1304.768" timestamp="1581797511078" />
-    <state width="1261" height="199" key="GridCell.Tab.0.right" timestamp="1581797511079">
-      <screen x="62" y="0" width="1304" height="768" />
+    <state width="1425" height="211" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1581941921894" />
+    <state width="1425" height="211" key="GridCell.Tab.0.right" timestamp="1581941921894">
+      <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state width="1261" height="199" key="GridCell.Tab.0.right/62.0.1304.768@62.0.1304.768" timestamp="1581797511079" />
+    <state width="1425" height="211" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1581941921894" />
     <state width="1261" height="238" key="GridCell.Tab.1.bottom" timestamp="1581788139190">
       <screen x="62" y="0" width="1304" height="768" />
     </state>
